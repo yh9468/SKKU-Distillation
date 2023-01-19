@@ -101,12 +101,12 @@ def test(data,
     half = device.type != 'cpu' and half_precision  # half precision only supported on CUDA
     if half:
         model.half()  
-  
+   
            
-    #Prunes tensor corresponding to parameter called
-    prune(
-    model = model,
-    amount = 0.3)     
+    # #Prunes tensor corresponding to parameter called
+    # prune(
+    # model = model,
+    # amount = 0.3)     
    
   #        
     # # Globally prunes tensors corresponding to all parameters
