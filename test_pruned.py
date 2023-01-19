@@ -126,7 +126,7 @@ def test(data,
             amount = 0.3)  
      
     print(' %.3g global sparsity' % sparsity(model))
-         
+           
     # Configure
     model.eval()
     if isinstance(data, str):
