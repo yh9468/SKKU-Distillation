@@ -53,7 +53,7 @@ def test(data,
     if training:  # called by train.py
         device = next(model.parameters()).device  # get model device
     
-    # else:  # called directly
+    # else:  # called directly 
     #     set_logging()
     #     device = select_device(opt.device, batch_size=batch_size)
 
