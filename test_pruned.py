@@ -128,7 +128,7 @@ def test(data,
     # print(' %.3g global sparsity' % sparsity(model))
                
     # Configure  
-    model.eval()
+    model.eval() 
     if isinstance(data, str):
         is_coco = data.endswith('coco.yaml')
         with open(data) as f:
