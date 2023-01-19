@@ -108,7 +108,7 @@ def test(data,
     model = model,
     amount = 0.3)     
    
-  # 
+  #    
     # # # Globally prunes tensors corresponding to all parameters
     # for name, m in model.named_modules():
     #     print(name)
