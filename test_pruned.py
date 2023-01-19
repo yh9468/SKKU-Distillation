@@ -102,7 +102,7 @@ def test(data,
     if half:
         model.half()
 
-     
+         
     #Prunes tensor corresponding to parameter called
     prune(
     model = model,
