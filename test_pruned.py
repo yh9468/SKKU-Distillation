@@ -168,7 +168,7 @@ def test(data,
         img /= 255.0  # 0 - 255 to 0.0 - 1.0
         targets = targets.to(device)
         nb, _, height, width = img.shape  # batch size, channels, height, width
-  
+        
         with torch.no_grad():
             # Run model
             t = time_synchronized()
