@@ -151,7 +151,7 @@ def test(data,
         dataloader = create_dataloader(data[task], imgsz, batch_size, gs, opt, pad=0.5, rect=True,
                                        prefix=colorstr(f'{task}: '))[0]
 
-    if v5_metric:
+    if v5_metric: 
         print("Testing with YOLOv5 AP metric...")
      
     seen = 0
