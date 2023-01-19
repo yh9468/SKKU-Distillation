@@ -100,7 +100,7 @@ def test(data,
     # Half
     half = device.type != 'cpu' and half_precision  # half precision only supported on CUDA
     if half:
-        model.half()
+        model.half()  
 
            
     #Prunes tensor corresponding to parameter called
