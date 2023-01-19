@@ -1,0 +1,11 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/taejune/OD/yolov7/dataset/1/train/imgpath.txt  # 118287 images
+val: /home/taejune/OD/yolov7/dataset/1/test/imgpath.txt  
+test: /home/taejune/OD/yolov7/dataset/1/test/imgpath.txt  
+
+# number of classes
+nc: 2
+
+# class names
+names: ['0', '1']

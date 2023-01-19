@@ -1,0 +1,12 @@
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ['./exp5_dataset/blur/train', './exp1_dataset/train', './exp5_dataset/jpeg/train', './exp5_dataset/rainy', './exp5_dataset/snow', './exp5_dataset/vfpnight']
+val: ['./exp1_dataset/test']
+test: ['./exp1_dataset/test']
+
+# number of classes
+nc: 2
+
+# class names
+names: ['normal', 'faint']

@@ -1,0 +1,11 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/taejune/OD/yolov7/dataset/5/train/imgpath.txt  # 118287 images
+val: /home/taejune/OD/yolov7/dataset/5/test/imgpath.txt  # 5000 images
+test: /home/taejune/OD/yolov7/dataset/5/test/imgpath.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 2
+
+# class names
+names: ['0', '1']
