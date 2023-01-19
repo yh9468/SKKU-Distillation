@@ -150,7 +150,7 @@ def test(data,
         task = opt.task if opt.task in ('train', 'val', 'test') else 'val'  # path to train/val/test images
         dataloader = create_dataloader(data[task], imgsz, batch_size, gs, opt, pad=0.5, rect=True,
                                        prefix=colorstr(f'{task}: '))[0]
-
+  
     if v5_metric: 
         print("Testing with YOLOv5 AP metric...")
      
@@ -168,7 +168,7 @@ def test(data,
         img /= 255.0  # 0 - 255 to 0.0 - 1.0
         targets = targets.to(device)
         nb, _, height, width = img.shape  # batch size, channels, height, width
-        
+
         with torch.no_grad():
             # Run model
             t = time_synchronized()
