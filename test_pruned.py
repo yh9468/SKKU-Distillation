@@ -92,7 +92,7 @@ def test(data,
         model.ema = model_ema
         gs = max(int(model.stride.max()), 32)  # grid size (max stride)
         imgsz = check_img_size(imgsz, s=gs)  # check img_size
-        
+         
         trace = False
         if trace:
             model = TracedModel(model, device, imgsz)
