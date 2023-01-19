@@ -115,7 +115,7 @@ def test(data,
         if isinstance(m, nn.Conv2d):
             pruning.l1_unstructured(m, name='weight', amount = 0.1)
             pruning.remove(m, 'weight')  # make permanent
-
+    
         if isinstance(m, torch.nn.Linear):
             pruning.l1_unstructured(m, name='weight', amount = 0.1)
             pruning.remove(m, 'weight')  # make permanent
