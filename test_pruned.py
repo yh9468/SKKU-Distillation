@@ -153,7 +153,7 @@ def test(data,
 
     if v5_metric:
         print("Testing with YOLOv5 AP metric...")
-    
+     
     seen = 0
     confusion_matrix = ConfusionMatrix(nc=nc)
     names = {k: v for k, v in enumerate(model.names if hasattr(model, 'names') else model.module.names)}
