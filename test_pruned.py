@@ -130,7 +130,7 @@ def test(data,
     # Configure  
     model.eval() 
     if isinstance(data, str):
-        is_coco = data.endswith('coco.yaml')
+        is_coco = data.endswith('coco.yaml') 
         with open(data) as f:
             data = yaml.load(f, Loader=yaml.SafeLoader)
     check_dataset(data)  # check
