@@ -110,22 +110,22 @@ def test(data,
    
   #      
     # # Globally prunes tensors corresponding to all parameters
-    for name, m in model.named_modules():
-        print(name)
-        if isinstance(m, nn.Conv2d):
-            pruning.l1_unstructured(m, name='weight', amount = 0.1)
-            pruning.remove(m, 'weight')  # make permanent
+    # for name, m in model.named_modules():
+    #     print(name)
+    #     if isinstance(m, nn.Conv2d):
+    #         pruning.l1_unstructured(m, name='weight', amount = 0.1)
+    #         pruning.remove(m, 'weight')  # make permanent
     
-        if isinstance(m, torch.nn.Linear):
-            pruning.l1_unstructured(m, name='weight', amount = 0.1)
-            pruning.remove(m, 'weight')  # make permanent
+    #     if isinstance(m, torch.nn.Linear):
+    #         pruning.l1_unstructured(m, name='weight', amount = 0.1)
+    #         pruning.remove(m, 'weight')  # make permanent
             
-            pruning.global_unstructured(
-            parameters = m,
-            pruning_method = pruning.l1_unstructured, #l1_unstructured
-            amount = 0.3)  
+    #         pruning.global_unstructured(
+    #         parameters = m,
+    #         pruning_method = pruning.l1_unstructured, #l1_unstructured
+    #         amount = 0.3)  
          
-    print(' %.3g global sparsity' % sparsity(model))
+    # print(' %.3g global sparsity' % sparsity(model))
              
     # Configure
     model.eval()
