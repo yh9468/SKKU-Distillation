@@ -58,8 +58,8 @@ def train(hyp, opt, device, tb_writer=None):
         yaml.dump(hyp, f, sort_keys=False)
     with open(save_dir / 'opt.yaml', 'w') as f:
         yaml.dump(vars(opt), f, sort_keys=False)
-
-    # Configure
+    
+    # Configure    
     plots = not opt.evolve  # create plots
     cuda = device.type != 'cpu'
     init_seeds(2 + rank)
