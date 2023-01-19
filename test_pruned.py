@@ -124,7 +124,7 @@ def test(data,
             parameters = m,
             pruning_method = pruning.l1_unstructured, #l1_unstructured
             amount = 0.3)  
-       
+         
     print(' %.3g global sparsity' % sparsity(model))
            
     # Configure
