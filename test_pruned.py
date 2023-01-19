@@ -46,7 +46,7 @@ def test(data,
          half_precision=True,
          trace=False,
          is_coco=False,
-         v5_metric=False):
+         v5_metric=False): 
 
     # Initialize/load model and set device
     training = model is not None
@@ -96,7 +96,7 @@ def test(data,
         trace = False
         if trace:
             model = TracedModel(model, device, imgsz)
-
+ 
     # Half
     half = device.type != 'cpu' and half_precision  # half precision only supported on CUDA
     if half:
